@@ -1,0 +1,191 @@
+$horizontalSpace: 48px;
+$verticalSpace: 24px;
+$color_grey_1: #384047;
+$color_grey_2: #a2acae;
+$color_grey_3: #e9ecef;
+$color_red: #ec5f7a;
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.app {
+  height: inherit;
+  width: inherit;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
+
+.layout {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContainer {
+  display: inherit;
+  flex: 1;
+  flex-direction: column;
+}
+
+.headerContainer {
+  display: inherit;
+  align-items: center;
+  flex-direction: column;
+  padding-left: $horizontalSpace;
+  padding-right: $horizontalSpace;
+}
+
+.smallTitle {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: white;
+  font-weight: normal;
+  margin-top: $verticalSpace;
+  align-self: flex-start;
+}
+
+.arrowDown {
+  width: 32px;
+  fill: white;
+}
+
+.appTitle {
+  font-size: 4em;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  margin-top: 160px;
+}
+
+.arrowDown {
+  margin-top: 80px;
+}
+
+.contentContainer {
+  display: inherit;
+  flex: 1;
+  flex-direction: column;
+  background-color: #eaedf1;
+  margin-top: 64px;
+  padding: $verticalSpace $horizontalSpace;
+  align-self: stretch;
+}
+
+.content {
+  display: inherit;
+  flex: 1;
+  flex-direction: column;
+  background-color: #f9fafa;
+  padding: $verticalSpace $horizontalSpace;
+}
+
+.filters {
+  display: inherit;
+  flex-direction: row;
+}
+
+.applyButton {
+  min-width: 180px;
+  align-self: center;
+  margin-top: 12px;
+}
+
+.contentItems {
+  display: inherit;
+  flex: 1;
+  flex-direction: column;
+  background-color: white;
+  border-top: solid 1px #d5d9de;
+}
+
+.itemContainer {
+  display: inherit;
+  flex: 1;
+  flex-direction: row;
+  margin: 0 $verticalSpace 0 $verticalSpace;
+  padding: $verticalSpace 0 ($verticalSpace * 1.5) 0;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.itemContainer > img {
+  width: 80px;
+  height: 77px;
+}
+
+.itemContent {
+  display: inherit;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 48px;
+  padding-top: 12px;
+}
+
+.itemTitle {
+  font-weight: bold;
+  font-size: 1em;
+  color: $color_grey_1;
+}
+
+.itemTitle > span > span.failed {
+  color: $color_red;
+}
+
+.itemDescription {
+  color: $color_grey_2;
+}
+
+.flightNumber {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12px;
+  padding-right: 12px;
+}
+
+.flightNumber > h4 {
+  color: $color_grey_1;
+}
+
+.flightNumber > small {
+  color: $color_grey_2;
+}
+
+.actionButtonsContainer {
+  display: inherit;
+  flex: 1;
+  flex-direction: row;
+  margin-top: 32px;
+}
+
+.actionButton {
+  border-color: $color_grey_3;
+  color: $color_grey_2;
+  background-color: white;
+  height: 34px;
+  font-size: 0.9em;
+  margin-right: 12px;
+}
+
+.footer {
+  display: inherit;
+  flex: 1;
+  flex-direction: row;
+  padding-top: 16px;
+}
+
+.footer > p {
+  color: $color_grey_2;
+  font-size: 0.9em;
+  display: inherit;
+  flex: 1;
+}
+
+.footer > a, .footer > a:focus {
+  color: $color_grey_2;
+  font-size: 0.9em;
+}
+
